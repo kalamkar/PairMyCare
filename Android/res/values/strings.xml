@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2013 Abhijit Kalamkar. All rights reserved.
+-->
+<resources>
+
+    <string name="app_name">Pair My Care</string>
+    <string name="settings">Settings</string>
+    <string name="add_a_plan">Add a plan</string>
+    <string name="home">Home</string>
+    <string name="action_caretaker_mode">Caretaker Mode</string>
+    <string name="action_caregiver_mode">Caregiver Mode</string>
+    <string name="show_to_care_taker_to_add">Show this to care receiver</string>
+    <string name="scan_code">Scan code</string>
+    <string name="your_name_please">Your name please</string>
+    <string name="add_event">Add Event</string>
+    <string name="title">Title</string>
+    <string name="repeat">Repeat</string>
+    <string name="grace_period">Grace Period</string>
+    <string name="hours">Hours</string>
+    <string name="minutes">Minutes</string>
+    <string name="save">Save</string>
+    <string name="expected_value">Expected Value</string>
+    <string name="value">Value</string>
+    <string name="grace_value">Grace Value</string>
+    <string name="send_message">Send message</string>
+    
+    <string name="caretakers">Caretakers</string>
+    <string name="caregivers">Caregivers</string>
+    
+    <string name="caregiver">Caregiver</string>
+    
+    <string name="plans">Plans</string>
+    <string name="my_plan">My Plan</string>
+    
+    <string name="time_to">Time to</string>
+    
+    <string name="skip">Skip</string>
+    
+    <string name="pedometer">Pedometer</string>
+    
+    <string name="speak_out">"Speak out plan "</string>
+    
+    <string name="my_grade">My Grade</string>
+    
+    <string name="my_caretakers">My Caretakers</string>
+
+</resources>

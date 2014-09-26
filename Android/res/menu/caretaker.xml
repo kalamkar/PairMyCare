@@ -1,0 +1,18 @@
+<!--
+  Copyright 2013 Abhijit Kalamkar. All rights reserved.
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_caregiver_mode"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_caregiver_mode"/>
+    
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="101"
+        android:showAsAction="never"
+        android:title="@string/settings"/>
+
+</menu>

@@ -1,0 +1,46 @@
+<!--
+  Copyright 2013 Abhijit Kalamkar. All rights reserved.
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/small_vertical_margin"
+    android:paddingBottom="@dimen/small_vertical_margin"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_toRightOf="@+id/exception"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/tertiary_text_light" />
+
+    <ImageView
+        android:id="@+id/exception"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/title"
+        android:src="@drawable/ic_plan_exception"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/deleteMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/title"
+        android:src="@android:drawable/ic_delete"
+        android:visibility="invisible" />
+
+</RelativeLayout>

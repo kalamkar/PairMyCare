@@ -1,0 +1,203 @@
+<!--
+  Copyright 2013 Abhijit Kalamkar. All rights reserved.
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".CareTakerActivity$CareTakerSectionFragment" >
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:ems="10"
+            android:hint="@string/title"
+            android:inputType="text|textCapSentences|textAutoCorrect|textAutoComplete" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/time"
+            android:text="@string/repeat"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <CheckBox
+            android:id="@+id/checkMon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView2"
+            android:text="Mon" />
+
+        <CheckBox
+            android:id="@+id/checkTue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/checkMon"
+            android:layout_below="@+id/checkMon"
+            android:layout_marginTop="5dp"
+            android:text="Tue" />
+
+        <CheckBox
+            android:id="@+id/checkWed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/checkMon"
+            android:layout_below="@+id/checkTue"
+            android:layout_marginTop="5dp"
+            android:text="Wed" />
+
+        <CheckBox
+            android:id="@+id/checkThu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/checkMon"
+            android:layout_below="@+id/checkWed"
+            android:layout_marginTop="5dp"
+            android:text="Thu" />
+
+        <CheckBox
+            android:id="@+id/checkFri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/checkMon"
+            android:layout_below="@+id/checkThu"
+            android:layout_marginTop="5dp"
+            android:text="Fri" />
+
+        <CheckBox
+            android:id="@+id/checkSat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/checkMon"
+            android:layout_below="@+id/checkFri"
+            android:layout_marginTop="5dp"
+            android:text="Sat" />
+
+        <CheckBox
+            android:id="@+id/checkSun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/checkMon"
+            android:layout_below="@+id/checkSat"
+            android:layout_marginTop="5dp"
+            android:text="Sun" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/time"
+            android:layout_below="@+id/time"
+            android:layout_marginTop="15dp"
+            android:text="@string/grace_period"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/grace"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_below="@+id/textView3"
+            android:ems="10"
+            android:inputType="number"
+            android:text="15" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/grace"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/grace" >
+
+            <RadioButton
+                android:id="@+id/radioMins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/minutes" />
+
+            <RadioButton
+                android:id="@+id/radioHours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hours" />
+        </RadioGroup>
+
+        <Spinner
+            android:id="@+id/actionSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/grace"
+            android:layout_alignRight="@+id/time"
+            android:layout_below="@+id/radioGroup1" />
+
+        <TimePicker
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_alignParentLeft="true" />
+
+        <EditText
+            android:id="@+id/expectedValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/actionSpinner"
+            android:layout_below="@+id/actionSpinner"
+            android:layout_toLeftOf="@+id/scan"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="@string/expected_value"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/graceValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/actionSpinner"
+            android:layout_below="@+id/expectedValue"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="@string/grace_value"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/graceValue"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/save" />
+
+        <ImageButton
+            android:id="@+id/scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/expectedValue"
+            android:src="@android:drawable/ic_menu_camera" />
+    </RelativeLayout>
+
+</ScrollView>
